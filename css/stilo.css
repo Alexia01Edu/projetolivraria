@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing*/
+}
+
+/*HEADER*/
+#topo{
+    background-color: aqua;
+}
+
+#logo{
+    background-image: url('../imagens/arv.avif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 150px;
+    height: 110px;
+}
+
+/*nav*/
+#menu{
+    background-color: blue;
+}
+
+/*main*/
+.destaques {
+    background-color: green;
+}
+
+/*footer*/
+#rodape {
+    background-color: greenyellow;
+}
+
