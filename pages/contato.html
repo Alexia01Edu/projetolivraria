@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stilo.css">
+    <title>Contato</title>
+</head>
+<body>
+    <header id="topo">
+        <h1>Livraria S. J.</h1>
+        <h2>"Livros novos e usados com os melhores preços para você"</h2>
+    </header>
+
+    <nav id="menu"><!--conteudo de navegação-->
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../pages/produtos.html">Livros</a></li>
+            <li><a href="../index.html">Promoções</a></li>
+            <li><a href="../pages/sobre.html">Jonh & Paul</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <main class="contato">
+       <form action="">
+            <fieldset>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" placeholder="digite seu Nome aqui">
+                </div>
+
+                <div>
+                    <label for="email">E-Mail:</label>
+                    <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+                </div>
+
+                <div>
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" name="tel">
+                </div>
+
+                <div>
+                    <label for="assunto">assunto:</label>
+                    <select name="assunto" id="assunto">
+                        <option value="selecione">Selecione</option>
+                        <option value="trocas">Trocas</option>
+                        <option value="atendimento">Atendimento</option>
+                        <option value="comercial">Comercial</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="mensagem">Sua mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="permissao">
+                    <label for="permissao">Desejo receber informações sobre a Livraria John e Paul</label><br>
+                </div>
+                
+                <div>
+                    <input type="reset">
+                    <input type="submit" name="enviar" value="Enviar">  
+                </div>
+            </fieldset>
+       </form>
+    </main>
+
+    <footer id="rodape"><!--conteudo de rodape - divs com nomes especificos do html-->
+        <ul>
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="../pages/produtos.html">Livros</a></li>
+            <li><a href="../index.html">Promoções</a></li>
+            <li><a href="../pages/sobre.html">Jonh & Paul</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+        <P>"2024. Livraria Jonh & Paul - &copy;Todos os direitos reservados"</P>
+    </footer>
+</body>
+</html>

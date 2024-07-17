@@ -20,12 +20,31 @@
 
 /*nav*/
 #menu{
-    background-color: blue;
+    background-color: #4169E1;
+}
+
+main{
+    background-color: aquamarine;
 }
 
 /*main*/
 .destaques {
     background-color: green;
+}
+
+/*main*/
+.sobre{
+    background-color: plum;
+}
+
+/*main*/
+.produtos{
+    background-color: indigo;
+}
+
+/*main*/
+.contato{
+    background-color: firebrick;
 }
 
 /*footer*/
