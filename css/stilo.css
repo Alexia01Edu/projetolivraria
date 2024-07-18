@@ -2,11 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /*https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing*/
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*HEADER*/
 #topo{
     background-color: aqua;
+    color: red;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: aliceblue;
+}
+a:hover{
+    background-color: black;
+    color: peru;
+    border: solid 2px cornflowerblue;
 }
 
 #logo{
@@ -20,35 +35,42 @@
 
 /*nav*/
 #menu{
-    background-color: #4169E1;
+    background-color: green;
 }
 
 main{
-    background-color: aquamarine;
+    background-color: darkslateblue;
 }
 
 /*main*/
 .destaques {
-    background-color: green;
+    
 }
 
 /*main*/
 .sobre{
-    background-color: plum;
+    
 }
-
+.sobre h1,h2{
+    color: red;
+}
 /*main*/
 .produtos{
-    background-color: indigo;
+    
 }
 
 /*main*/
 .contato{
-    background-color: firebrick;
+    
 }
 
 /*footer*/
 #rodape {
     background-color: greenyellow;
+}
+
+.livros img{
+    width: 150px;
+    height: 240px;
 }
 
