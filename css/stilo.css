@@ -5,41 +5,54 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-image: url('../imagens/arvori.avif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: auto;
+    background-color: #0b0505;
+}
 /*HEADER*/
 #topo{
-    background-color: aqua;
     color: red;
     text-align: center;
 }
 
-a{
+nav a{
     text-decoration: none;
 }
-a:visited{
+nav a:visited{
     color: aliceblue;
 }
-a:hover{
+nav a:hover{
     background-color: black;
     color: peru;
     border: solid 2px cornflowerblue;
 }
+nav a:active{
+    background-color: black;
+    color: peru;
+    border: solid 2px red;
+}
 
 #logo{
-    background-image: url('../imagens/arv.avif');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center top;
-    width: 150px;
-    height: 110px;
+    
 }
 
 /*nav*/
 #menu{
     background-color: green;
+    margin: 16px 0px;
+    padding: 16px 20px;
 }
 
 main{
-    background-color: darkslateblue;
+    opacity: 70%;
+    margin: 16px 0px;
+    padding: 32px;
+    background-image: radial-gradient(circle, transparent 30%, #d5c8a5 50%, black );
 }
 
 /*main*/
@@ -49,7 +62,7 @@ main{
 
 /*main*/
 .sobre{
-    
+    color: aliceblue;
 }
 .sobre h1,h2{
     color: red;
@@ -66,7 +79,7 @@ main{
 
 /*footer*/
 #rodape {
-    background-color: greenyellow;
+   
 }
 
 .livros img{
