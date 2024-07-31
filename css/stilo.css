@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box; 
     font-family: 'Snell Roundhand Script';
-    font-weight: 900px;
 }
 /**background-image: url('../imagens/arvori.avif');
     background-size: contain;
@@ -84,6 +83,7 @@ main{
   background-size: 650px 950px;
   background-repeat: no-repeat; 
   background-position: center;
+  font-weight: 900;
 }
 
 .contato form{
