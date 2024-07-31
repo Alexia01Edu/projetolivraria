@@ -1,22 +1,25 @@
+@import url(https://db.onlinewebfonts.com/c/31ed0189fe1ff1e740a652e0f75b77dc?family=Snell+Roundhand+Script);
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing*/
-    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box; 
+    font-family: 'Snell Roundhand Script';
+    font-weight: 900px;
 }
-
-body{
-    background-image: url('../imagens/arvori.avif');
+/**background-image: url('../imagens/arvori.avif');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    height: auto;
+    background-attachment: fixed;*/
+body{
+    height: 100vh;
+    width:100vw;
     background-color: #0b0505;
 }
 /*HEADER*/
 #topo{
-    color: red;
+    color: #d5c8a5;
     text-align: center;
 }
 
@@ -50,8 +53,6 @@ nav a:active{
 
 main{
     opacity: 70%;
-    margin: 16px 0px;
-    padding: 32px;
     background-image: radial-gradient(circle, transparent 30%, #d5c8a5 50%, black );
 }
 
@@ -62,10 +63,10 @@ main{
 
 /*main*/
 .sobre{
-    color: aliceblue;
+    color: #d5c8a5;
 }
 .sobre h1,h2{
-    color: red;
+    color: #d5c8a5;
 }
 /*main*/
 .produtos{
@@ -74,12 +75,31 @@ main{
 
 /*main*/
 .contato{
-    
+  
+  align-content: center;
+  display: flex;
+  width: 100%;
+  height: 900px;
+  background-image: url('../imagens/pergaminho.png');
+  background-size: 650px 950px;
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+
+.contato form{
+  padding: 10px;
+  width: 300px;
+  height: 400px;
+  margin: auto;
+}
+
+#mensagem{
+  
 }
 
 /*footer*/
 #rodape {
-   
+  bottom:0;
 }
 
 .livros img{
