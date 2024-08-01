@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="../css/stilo.css">
     <title>Contato</title>
 </head>
-<body>
+<body class="corf">
     <header id="topo">
         <h1>Livraria S. J.</h1>
         <h2>"Livros novos e usados com os melhores preços para você"</h2>
     </header>
 
-    <nav id="menu"><!--conteudo de navegação-->
+    <nav id="menu" class="a"><!--conteudo de navegação-->
         <ul>
             <li><a href="../index.html">Início</a></li>
             <li><a href="../pages/produtos.html">Livros</a></li>
@@ -25,20 +25,19 @@
 
     <main class="contato">
        <form action="">
-            <fieldset>
                 <div>
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" placeholder="digite seu Nome aqui">
+                    <input type="text" name="nome" class="c">
                 </div>
 
                 <div>
                     <label for="email">E-Mail:</label>
-                    <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+                    <input type="e-mail" name="email" class="c">
                 </div>
 
                 <div>
                     <label for="tel">Telefone:</label>
-                    <input type="tel" name="tel">
+                    <input type="tel" name="tel"  class="c">
                 </div>
 
                 <div>
@@ -62,15 +61,16 @@
                     <label for="permissao">Desejo receber informações sobre a Livraria John e Paul</label><br>
                 </div>
                 
-                <div>
+                <div id="recomecar" class="bottom">
                     <input type="reset">
+                </div>
+                <div id="enviar" class="bottom">
                     <input type="submit" name="enviar" value="Enviar">  
                 </div>
-            </fieldset>
        </form>
     </main>
 
-    <footer id="rodape"><!--conteudo de rodape - divs com nomes especificos do html-->
+    <footer id="rodape" class="a"><!--conteudo de rodape - divs com nomes especificos do html-->
         <ul>
             <li><a href="../index.html">Início</a></li>
             <li><a href="../pages/produtos.html">Livros</a></li>

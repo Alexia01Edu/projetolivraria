@@ -6,12 +6,14 @@
     box-sizing: border-box; 
     font-family: 'Snell Roundhand Script';
 }
-/**background-image: url('../imagens/arvori.avif');
+/***/
+
+body{
+    background-image: url('../imagens/fundo.avif');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;*/
-body{
+    background-attachment: fixed;
     height: 100vh;
     width:100vw;
     background-color: #0b0505;
@@ -22,22 +24,28 @@ body{
     text-align: center;
 }
 
-nav a{
-    text-decoration: none;
+.a{
+    width: 100%;
+    height: 120px;
 }
-nav a:visited{
+.a li{
+    display: inline-block;
+}
+.a a{
+    font-size: 30px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+.a a:visited{
     color: aliceblue;
 }
-nav a:hover{
+.a a:hover{
     background-color: black;
     color: peru;
     border: solid 2px cornflowerblue;
 }
-nav a:active{
-    background-color: black;
-    color: peru;
-    border: solid 2px red;
-}
+
 
 #logo{
     
@@ -45,19 +53,35 @@ nav a:active{
 
 /*nav*/
 #menu{
-    background-color: green;
     margin: 16px 0px;
     padding: 16px 20px;
+    background-image: linear-gradient(to right, #0b0505, rgba(213, 200, 165,0.7));
 }
 
+/*main geral*/
 main{
     opacity: 70%;
     background-image: radial-gradient(circle, transparent 30%, #d5c8a5 50%, black );
+    padding: 30px;
 }
 
-/*main*/
-.destaques {
-    
+/*main destaques*/
+.destaques img{
+    width: 150px;
+    height: 240px;
+    display: block;
+        
+}
+
+.destaques li{
+    display: inline-block;
+    margin: 25px 50px 75px 25px;
+    width: 150px;
+    height: auto;
+}
+.destaques span{
+    font-weight: 900;
+    font-size: 18px;
 }
 
 /*main*/
@@ -73,37 +97,77 @@ main{
 }
 
 /*main*/
+
 .contato{
-  
+  opacity: 100%;
   align-content: center;
   display: flex;
   width: 100%;
-  height: 900px;
+  height: 750px;
   background-image: url('../imagens/pergaminho.png');
-  background-size: 650px 950px;
   background-repeat: no-repeat; 
   background-position: center;
-  font-weight: 900;
+
 }
 
 .contato form{
+  font-weight: 900;
+  font-size: 18px;
   padding: 10px;
   width: 300px;
   height: 400px;
   margin: auto;
 }
 
-#mensagem{
-  
+#recomecar{
+    background-image: url('../imagens/recomeçar.png');
+    background-repeat: no-repeat; 
+    background-size: contain;
+    display: inline-block;
+    margin-right: 20px;
+    float: right;
+    width: 80px;
+    height: 80px;
 }
+.bottom input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+#enviar{
+    background-image: url('../imagens/selosenviar.png');
+    background-repeat: no-repeat; 
+    background-size: contain;
+    padding-right: 10px;
+    float: right;
+    width: 100px;
+    height: 80px;
+}
+
+.c, #assunto{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+input:focus {
+    border: none;
+
+  }
+  
+#mensagem{
+    background-color: transparent;
+}
+
 
 /*footer*/
 #rodape {
   bottom:0;
+  opacity: 50%;
+  background-color: #0b0505;
+  color: aliceblue;
 }
 
-.livros img{
-    width: 150px;
-    height: 240px;
-}
+
 
