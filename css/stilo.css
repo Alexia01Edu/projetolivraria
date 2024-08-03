@@ -280,9 +280,11 @@ main {
     outline: none
 }
 
-#p{
-    display: none;
+
+.custom-checkbox input[type="checkbox"] {
+    display: none; /* Oculta o checkbox padrão */
 }
+
 
 
 /* Footer */
