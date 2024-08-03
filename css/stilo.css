@@ -1,125 +1,253 @@
 @import url(https://db.onlinewebfonts.com/c/31ed0189fe1ff1e740a652e0f75b77dc?family=Snell+Roundhand+Script);
 
-*{
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
     font-family: 'Snell Roundhand Script';
 }
-/***/
 
-body{
+body {
     background-image: url('../imagens/fundo.avif');
-    background-size: contain;
+    background-size: cover; /* Adjusted to cover instead of contain */
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
-    width:100vw;
+    width: 100vw;
     background-color: #0b0505;
 }
-/*HEADER*/
-#topo{
+
+/* Header */
+#topo {
     color: #d5c8a5;
     text-align: center;
 }
 
-.a{
+.a {
     width: 100%;
     height: 120px;
 }
-.a li{
+
+.a li {
     display: inline-block;
 }
-.a a{
+
+.a a {
     font-size: 30px;
     display: block;
     text-decoration: none;
     text-align: center;
+    color: aliceblue; 
 }
-.a a:visited{
-    color: aliceblue;
+
+.a a:visited {
+    color: aliceblue; 
 }
-.a a:hover{
+
+.a a:hover {
     background-color: black;
     color: peru;
     border: solid 2px cornflowerblue;
 }
 
-
-#logo{
-    
-}
-
-/*nav*/
-#menu{
-    margin: 16px 0px;
+/* Navigation Menu */
+#menu {
+    margin: 16px 0;
     padding: 16px 20px;
-    background-image: linear-gradient(to right, #0b0505, rgba(213, 200, 165,0.7));
+    background-image: linear-gradient(to right, rgba(213, 200, 165, 0.7),  #0b0505);
+    text-align: center;
+    text-align: center; /* Center text horizontally */
+    display: flex; /* Apply flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
 }
 
-/*main geral*/
-main{
-    opacity: 70%;
-    background-image: radial-gradient(circle, transparent 30%, #d5c8a5 50%, black );
+#menu li {
+    margin-left: 50px;
+}
+
+/* Main Content */
+main {
+    opacity: 0.7;
+    background-image: radial-gradient(circle, transparent 30%, #d5c8a5 40%, black);
     padding: 30px;
 }
 
-/*main destaques*/
-.destaques img{
-    width: 150px;
-    height: 240px;
-    display: block;
-        
+/* index */
+
+.destaques {
+    padding: 20px; /* Espaçamento interno */
 }
 
-.destaques li{
-    display: inline-block;
-    margin: 25px 50px 75px 25px;
-    width: 150px;
-    height: auto;
+/* Estilização do Cabeçalho Destaques */
+.destaques h2 {
+    text-align: center; /* Centraliza o cabeçalho */
+    margin-bottom: 20px; /* Espaçamento abaixo do cabeçalho */
+    font-size: 24px; /* Tamanho da fonte do cabeçalho */
 }
-.destaques span{
+
+/* Estilização da Lista de Livros */
+.livros {
+    display: grid; /* Usa grid layout para a lista */
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas de tamanho igual */
+    gap: 30px; /* Espaçamento maior entre as colunas e linhas */
+    list-style: none; /* Remove os marcadores padrão da lista */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    justify-items: center; /* Centraliza os itens dentro das células da grid */
+}
+
+/* Estilização dos Itens da Lista */
+.livros li {
+    text-align: center; /* Centraliza o texto dentro do item */
+    width: 100%; /* Largura total da célula da grid */
+    max-width: 200px; /* Largura máxima dos itens */
+}
+
+/* Estilização das Imagens */
+.livros img {
+    width: 150px; /* Largura das imagens */
+    height: 240px; /* Altura das imagens */
+    display: block; /* Faz com que a imagem seja um bloco */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    object-fit: cover; /* Ajusta a imagem para preencher a caixa sem distorção */
+}
+
+/* Estilização dos Textos dos Livros */
+.livros span {
+    display: block; /* Faz com que o texto ocupe uma linha inteira */
+    margin-top: 10px; /* Espaçamento acima do texto */
+    font-weight: bold; /* Negrito para o texto */
+    font-size: 16px; /* Tamanho da fonte do texto */
+}
+
+
+/* Estilização das Imagens */
+.livros img {
+    width: 150px; /* Largura das imagens */
+    height: 240px; /* Altura das imagens */
+    display: block; /* Faz com que a imagem seja um bloco */
+    object-fit: cover; /* Ajusta a imagem para preencher a caixa sem distorção */
+}
+
+/* Estilização dos Textos dos Livros */
+.livros span {
+    display: block; /* Faz com que o texto ocupe uma linha inteira */
+    margin-top: 10px; /* Espaçamento acima do texto */
+    font-weight: bold; /* Negrito para o texto */
+    font-size: 20px; /* Tamanho da fonte do texto */
+}
+
+/*produtos*/
+
+#tblivros {
+    font-size: 20px;
+    font-weight: bold;
+    width: 80%; /* Ajuste a largura conforme necessário */
+    margin: 20px auto; /* Centraliza a tabela horizontalmente e adiciona margem vertical */
+    border-collapse: collapse; /* Remove espaços entre bordas */
+    background-color: #d5c8a5; /* Cor de fundo da tabela */
+    opacity: 0.95; /* Levemente transparente */
+}
+
+/* Estilização das Células da Tabela */
+#tblivros th, #tblivros td {
+    border: 1px solid #0b0505; /* Cor da borda das células */
+    padding: 10px; /* Espaço interno das células */
+    text-align: center; /* Alinha o texto no centro das células */
+}
+
+/* Estilização dos Cabeçalhos da Tabela */
+#tblivros th {
+    background-color: #0b0505; /* Cor de fundo dos cabeçalhos */
+    color: #d5c8a5; /* Cor do texto dos cabeçalhos */
+    font-weight: bold; /* Negrito para os cabeçalhos */
+}
+
+/* Estilização das Linhas da Tabela */
+#tblivros tr:nth-child(even) {
+    background-color: #f2f2f2; /* Cor de fundo das linhas pares */
+}
+
+#tblivros tr:hover {
+    background-color: #d5c8a5; /* Cor de fundo ao passar o mouse */
+    color: #0b0505; /* Cor do texto ao passar o mouse */
+}
+
+/* Sobre */
+.sobre {
+    color: #d5c8a5; /* Cor do texto */
+    background: radial-gradient(circle, transparent 30%, #0b0505 50%); /* Fundo com gradiente radial */
+    padding: 40px; /* Espaçamento interno */
+    margin: 20px auto; /* Margem para centralizar a seção */
+    width: 80%; /* Largura da seção */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 22px;
+}
+
+/* Estilização dos Cabeçalhos */
+.sobre h1, .sobre h2 {
+    color: #d5c8a5; /* Cor dos cabeçalhos */
+    text-align: center; /* Centralizar texto */
+    margin-bottom: 20px; /* Espaçamento abaixo dos cabeçalhos */
+}
+
+/* Estilização dos Parágrafos */
+.sobre p {
+    line-height: 1.6; /* Altura da linha para melhorar a legibilidade */
+    margin-bottom: 20px; /* Espaçamento abaixo dos parágrafos */
+}
+
+/* Estilização da Lista Ordenada */
+.sobre ol {
+    margin-left: 40px; 
+    margin-bottom: 20px;
+    padding: 0; 
+}
+
+/* Estilização dos Itens da Lista */
+.sobre li {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: bold; 
+}
+
+
+/* Contato */
+.contato {
+    opacity: 1; /* Reset opacity to default */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 750px;
+    background-image: url('../imagens/pergaminho.png');
+    background-repeat: no-repeat; 
+    background-position: center;
+}
+
+.contato form {
+    color: #1f1204;
     font-weight: 900;
-    font-size: 18px;
+    font-size: 20px;
+    padding: 10px;
+    width: 300px;
+    height: 400px;
+    margin: auto;
 }
 
-/*main*/
-.sobre{
-    color: #d5c8a5;
-}
-.sobre h1,h2{
-    color: #d5c8a5;
-}
-/*main*/
-.produtos{
-    
+
+
+.bottom input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
 }
 
-/*main*/
-
-.contato{
-  opacity: 100%;
-  align-content: center;
-  display: flex;
-  width: 100%;
-  height: 750px;
-  background-image: url('../imagens/pergaminho.png');
-  background-repeat: no-repeat; 
-  background-position: center;
-
-}
-
-.contato form{
-  font-weight: 900;
-  font-size: 18px;
-  padding: 10px;
-  width: 300px;
-  height: 400px;
-  margin: auto;
-}
-
-#recomecar{
+#recomecar {
     background-image: url('../imagens/recomeçar.png');
     background-repeat: no-repeat; 
     background-size: contain;
@@ -129,13 +257,8 @@ main{
     width: 80px;
     height: 80px;
 }
-.bottom input{
-    background-color: transparent;
-    border: none;
-    width: 100%;
-    height: 100%;
-}
-#enviar{
+
+#enviar {
     background-image: url('../imagens/selosenviar.png');
     background-repeat: no-repeat; 
     background-size: contain;
@@ -145,29 +268,66 @@ main{
     height: 80px;
 }
 
-.c, #assunto{
+.c, #assunto { /*inputs e selection*/
     background-color: transparent;
     border: none;
     border-bottom: 1px solid black;
-  }
+    outline: none /*tira a borda de selecionado*/
+}
 
-input:focus {
-    border: none;
-
-  }
-  
-#mensagem{
+#mensagem { /*textarea contato*/
     background-color: transparent;
+    outline: none
+}
+
+#p{
+    display: none;
 }
 
 
-/*footer*/
+/* Footer */
 #rodape {
-  bottom:0;
-  opacity: 50%;
-  background-color: #0b0505;
-  color: aliceblue;
+    bottom: 0;
+    opacity: 0.5;
+    background-color: #0b0505;
+    color: aliceblue;
 }
 
+#rodape {
+    background-color: #0b0505; 
+    color: aliceblue; 
+    text-align: center; 
+    padding: 20px; 
+    bottom: 0; 
+    width: 100%; /* Largura total do rodapé */
+    opacity: 0.5; /* Opacidade ajustada */
+    border-top: 2px solid #d5c8a5; /* Borda superior com cor de destaque */
+}
 
+#rodape ul {
+    list-style: none; /* Remove os marcadores padrão */
+    padding: 0; /* Remove o padding padrão */
+    margin: 0; /* Remove a margem padrão */
+    display: flex; /* Aplica flexbox para os itens da lista */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
 
+#rodape li {
+    margin: 0 15px; /* Espaçamento entre os itens da lista */
+}
+
+#rodape a {
+    color: aliceblue; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-size: 18px; /* Tamanho da fonte dos links */
+}
+
+#rodape a:hover {
+    color: peru; /* Cor do link ao passar o mouse */
+    text-decoration: underline; /* Sublinhado dos links ao passar o mouse */
+}
+
+#rodape p {
+    margin-top: 20px; /* Espaçamento acima do texto */
+    font-size: 14px; /* Tamanho da fonte do texto */
+}
