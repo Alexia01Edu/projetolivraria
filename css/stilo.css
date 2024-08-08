@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Snell Roundhand Script;
+    src: url(../css/snell-roundhand/SnellBT-Regular.otf)
+  }
 @import url(https://db.onlinewebfonts.com/c/31ed0189fe1ff1e740a652e0f75b77dc?family=Snell+Roundhand+Script);
 
 /* Global Styles */
@@ -58,7 +62,6 @@ body {
     padding: 16px 20px;
     background-image: linear-gradient(to right, rgba(213, 200, 165, 0.7),  #0b0505);
     text-align: center;
-    text-align: center; 
     display: flex; 
     justify-content: center; /* Center items horizontally */
     align-items: center; /* Center items vertically */
@@ -99,18 +102,18 @@ main {
 
 /* Estilização dos Itens da Lista */
 .livros li {
-    text-align: center; /* Centraliza o texto dentro do item */
-    width: 100%; /* Largura total da célula da grid */
-    max-width: 200px; /* Largura máxima dos itens */
+    text-align: center; 
+    width: 100%; 
+    max-width: 200px;
 }
 
 /* Estilização das Imagens */
 .livros img {
-    width: 150px; /* Largura das imagens */
-    height: 240px; /* Altura das imagens */
-    display: block; /* Faz com que a imagem seja um bloco */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
-    object-fit: cover; /* Ajusta a imagem para preencher a caixa sem distorção */
+    width: 150px; 
+    height: 240px; 
+    display: block; 
+    margin: 0 auto; 
+    object-fit: cover; 
 }
 
 /* Estilização dos Textos dos Livros */
